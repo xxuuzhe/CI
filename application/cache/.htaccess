@@ -1,0 +1,7 @@
+<IfModule authz_core_module>
+    Require all denied
+     SetEnv CI_ENV production
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
